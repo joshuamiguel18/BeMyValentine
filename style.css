@@ -1,0 +1,96 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    font-family: 'Kalam', cursive;
+    color: wheat;
+}
+body {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    background-color: rgba(227, 61, 148);
+}
+button {
+    font-size: 1rem;
+    padding: .4rem 1rem;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.yes {
+    background-color: lightgreen;
+    
+}
+.yes:hover {
+    background-color: rgba(0,200,0,1);
+    
+}
+.no {
+    background-color: red;
+}
+.no:hover {
+    background-color: rgba(200,0,0,1);
+}
+.giffy {
+    border-radius: 20px;
+}
+.heart {
+position: absolute;
+animation: heartAnimation 5.5s ease-out forwards;
+}
+.question {
+text-align: center;
+}
+.text {
+display: none;
+
+}
+.heart1 {
+animation-name: heartAnimation1;
+}
+.heart2 {
+animation-name: heartAnimation2;
+}
+.heart3 {
+animation-name: heartAnimation3;
+}
+@keyframes heartAnimation1 {
+0% {
+    opacity: 1;
+    transform: translateY(-25%);
+}
+100% {
+    opacity: 0;
+    transform: translateY(100px);
+}
+}
+@keyframes heartAnimation2 {
+0% {
+    opacity: 1;
+    transform: translateY(-25%) rotate(0deg);
+}
+100% {
+    opacity: 0;
+    transform: translateY(100px) rotate(360deg);
+}
+}
+@keyframes heartAnimation3 {
+0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+100% {
+    opacity: 0;
+    transform: translateY(100px) scale(0);
+}
+}
